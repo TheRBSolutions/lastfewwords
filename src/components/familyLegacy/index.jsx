@@ -19,19 +19,20 @@ const FamilyLegacy = () => {
         <div className="family-legacy-container">
             <header className="family-header">
                 <FontAwesomeIcon icon={faArrowLeft} className="back-icon"
-                    onClick={() => { navigate('/dashboard') }} />
+                    onClick={() => { navigate('/lastfewwords/dashboard') }} />
                 <h2>Family Legacy</h2>
             </header>
             <div className="family-grid">
                 {familyMembers.map((member, index) => (
                     <div key={index} className={`family-member ${member.name === 'DAD' ? 'wide' : ''}`}
-                        onClick={() => { navigate(`/family-acces/${member?.name}`) }}>
+                        onClick={() => { navigate(`/lastfewwords/family-acces/${member?.name}`) }}>
                         <p style={{ textTransform: 'uppercase' }}>{member.name}</p>
                         <p className="storage">{member.storage}</p>
                     </div>
                 ))}
             </div>
-            <button className="add-family-member">
+            <button className="add-family-member"
+                onClick={() => { navigate('/lastfewwords/subscription') }}>
                 <FontAwesomeIcon icon={faPlus} />
                 <span>Add New Family Member</span>
             </button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Icon from '../../../assets/icon.svg';
 import './otpVerification.css';
+import { Link } from 'react-router-dom';
 
 const OtpVerification = () => {
     return (
@@ -18,7 +19,9 @@ const OtpVerification = () => {
                         <input type="text" maxLength="1" />
                         <input type="text" maxLength="1" />
                     </div>
-                    <p className="resend-link">Didn’t Receive an OTP? <a href="/resend">Resend</a></p>
+                    <p className="resend-link">Didn’t Receive an OTP?
+                        <Link to='/lastfewwords/login' style={{ marginLeft: '5px' }}>Resend</Link>
+                    </p>
                 </div>
             </div>
         </>

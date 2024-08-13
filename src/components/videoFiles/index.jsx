@@ -12,7 +12,7 @@ const VideoFiles = () => {
         <div className="audio-files-container">
             <header className="audio-header">
                 <FontAwesomeIcon icon={faArrowLeft} className="back-icon"
-                    onClick={() => { navigate('/dashboard') }} />
+                    onClick={() => { navigate('/lastfewwords/dashboard') }} />
                 <h2>Video Files</h2>
             </header>
             <div className="search-bar">

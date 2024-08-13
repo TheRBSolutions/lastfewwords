@@ -46,23 +46,23 @@ const Dashboard = () => {
                 <p>155.6 of 200 GB Used</p>
             </div>
             <div className="features-grid">
-                <div className="feature-item" onClick={() => { handleFiles('/audio-files') }}>
+                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/audio-files') }}>
                     <FontAwesomeIcon icon={faVolumeUp} className="feature-icon" />
                     <p>Audio</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/video-files') }}>
+                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/video-files') }}>
                     <FontAwesomeIcon icon={faVideo} className="feature-icon" />
                     <p>Video</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/document-files') }}>
+                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/document-files') }}>
                     <FontAwesomeIcon icon={faFileAlt} className="feature-icon" />
                     <p>Document</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/image-files') }}>
+                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/image-files') }}>
                     <FontAwesomeIcon icon={faImage} className="feature-icon" />
                     <p>Images</p>
                 </div>
-                <div className="feature-item-wide" onClick={() => { handleFiles('/family-legacy') }}>
+                <div className="feature-item-wide" onClick={() => { handleFiles('/lastfewwords/family-legacy') }}>
                     <FontAwesomeIcon icon={faUsers} className="feature-icon" />
                     <p>Family Legacy</p>
                 </div>

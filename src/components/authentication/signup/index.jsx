@@ -1,8 +1,11 @@
 import React from 'react';
 import Icon from '../../../assets/icon.svg';
 import './signup.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+    const navigate = useNavigate()
+
     return (
         <>
             <div className="signup-container">
@@ -25,7 +28,14 @@ const Signup = () => {
                             <label>Confirm Password *</label>
                             <input type="password" placeholder="Confirm your password" />
                         </div>
-                        <p className="signin-link">Already have an account? <a href="/">Sign In</a></p>
+                        <button className="cus-btn"
+                            onClick={() => { navigate('/lastfewwords/otp-verification') }}>
+                            SignUp
+                        </button>
+                        <p className="signin-link">
+                            Already have an account?
+                            <Link to='/lastfewwords/login' style={{marginLeft:'5px'}}>Sign In</Link>
+                        </p>
                     </form>
                 </div>
             </div>

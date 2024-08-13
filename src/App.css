@@ -1,0 +1,29 @@
+.cus-btn {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cus-btn:hover {
+    background-color: #6f42c1;
+    transform: translateY(-2px);
+}
+
+.cus-btn:active {
+    background-color: #4a2c8a;
+    transform: translateY(0);
+}
+
+.cus-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

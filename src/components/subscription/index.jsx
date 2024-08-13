@@ -19,7 +19,7 @@ const Subscription = () => {
         <div className="family-legacy-container">
             <header className="family-header">
                 <FontAwesomeIcon icon={faArrowLeft} className="back-icon"
-                    onClick={() => { navigate('/dashboard') }} />
+                    onClick={() => { navigate('/lastfewwords/dashboard') }} />
                 <h2>BUY A NEW PACKAGE</h2>
             </header>
             <div className="family-grid">

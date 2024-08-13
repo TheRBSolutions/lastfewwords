@@ -1,8 +1,11 @@
 import React from 'react';
 import Icon from '../../../assets/icon.svg';
 import './login.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate()
+
     return (
         <>
             <div className="login-container">
@@ -21,7 +24,14 @@ const Login = () => {
                             <label>Password *</label>
                             <input type="password" placeholder="Enter your password" />
                         </div>
-                        <p className="signin-link">Don't have an account? <a href="/signup">Register</a></p>
+                        <button className="cus-btn"
+                            onClick={() => { navigate('/lastfewwords/dashboard') }}>
+                            Login
+                        </button>
+                        <p className="signin-link">
+                            Don't have an account?
+                            <Link to='/lastfewwords/signup' style={{ marginLeft: '5px' }}>Register</Link>
+                        </p>
                     </form>
                 </div>
             </div>

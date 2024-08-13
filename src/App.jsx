@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './components/authentication/login';
 import OtpVerification from './components/authentication/otpVerifications';
 import SignUp from './components/authentication/signup';
@@ -17,17 +17,18 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/otp-verification" element={<OtpVerification />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/audio-files" element={<AudioFiles />} />
-        <Route path="/video-files" element={<VideoFiles />} />
-        <Route path="/document-files" element={<DocumentFiles />} />
-        <Route path="/image-files" element={<ImageFiles />} />
-        <Route path="/family-legacy" element={<FamilyLegacy />} />
-        <Route path="/family-acces/:title" element={<FamilyAcces />} />
-        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/lastfewwords/" element={<Navigate to="/lastfewwords/login" />} />
+        <Route path="/lastfewwords/login" element={<Login />} />
+        <Route path="/lastfewwords/otp-verification" element={<OtpVerification />} />
+        <Route path="/lastfewwords/signup" element={<SignUp />} />
+        <Route path="/lastfewwords/dashboard" element={<Dashboard />} />
+        <Route path="/lastfewwords/audio-files" element={<AudioFiles />} />
+        <Route path="/lastfewwords/video-files" element={<VideoFiles />} />
+        <Route path="/lastfewwords/document-files" element={<DocumentFiles />} />
+        <Route path="/lastfewwords/image-files" element={<ImageFiles />} />
+        <Route path="/lastfewwords/family-legacy" element={<FamilyLegacy />} />
+        <Route path="/lastfewwords/family-acces/:title" element={<FamilyAcces />} />
+        <Route path="/lastfewwords/subscription" element={<Subscription />} />
       </Routes>
     </Router>
   );
