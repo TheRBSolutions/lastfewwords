@@ -1,0 +1,105 @@
+.dashboard-container {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon,
+.user-icon {
+  font-size: 24px;
+}
+
+.welcome-text h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.storage-space {
+  margin-top: 20px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.storage-space h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.storage-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.storage-used {
+  height: 100%;
+  background-color: #a74cb0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature-item-wide {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  grid-column: span 2;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+.dashboard-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.burger-menu {
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 16px;
+}
