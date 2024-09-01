@@ -24,7 +24,8 @@ const Subscription = () => {
             </header>
             <div className="family-grid">
                 {subscriptionList.map((member, index) => (
-                    <div key={index} className={`family-member ${member.storage === '1000GB' ? 'wide' : ''}`}>
+                    <div key={index} style={{ cursor: 'pointer' }}
+                        className={`family-member ${member.storage === '1000GB' ? 'wide' : ''}`}>
                         <p style={{ textTransform: 'uppercase' }}>{member.storage}</p>
                         <p className="storage">{member.price}</p>
                     </div>

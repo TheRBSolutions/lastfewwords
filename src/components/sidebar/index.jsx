@@ -18,19 +18,19 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li onClick={() => { navigate('/lastfewwords/audio-files') }}>
-                    Audio
+                    <a style={{ cursor: 'pointer' }}>Audio</a>
                 </li>
                 <li onClick={() => { navigate('/lastfewwords/video-files') }}>
-                    Video
+                    <a style={{ cursor: 'pointer' }}>Video</a>
                 </li>
                 <li onClick={() => { navigate('/lastfewwords/document-files') }}>
-                    Document
+                    <a style={{ cursor: 'pointer' }}> Document</a>
                 </li>
                 <li onClick={() => { navigate('/lastfewwords/image-files') }}>
-                    Images
+                    <a style={{ cursor: 'pointer' }}>Images</a>
                 </li>
                 <li onClick={() => { navigate('/lastfewwords/family-legacy') }}>
-                    Family Legacy
+                    <a style={{ cursor: 'pointer' }}>Family Legacy</a>
                 </li>
                 <li><a href="#buy-storage">Buy Storage</a></li>
                 <li><a href="#security">Security</a></li>

@@ -24,7 +24,8 @@ const FamilyLegacy = () => {
             </header>
             <div className="family-grid">
                 {familyMembers.map((member, index) => (
-                    <div key={index} className={`family-member ${member.name === 'DAD' ? 'wide' : ''}`}
+                    <div key={index} style={{ cursor: 'pointer' }}
+                        className={`family-member ${member.name === 'DAD' ? 'wide' : ''}`}
                         onClick={() => { navigate(`/lastfewwords/family-acces/${member?.name}`) }}>
                         <p style={{ textTransform: 'uppercase' }}>{member.name}</p>
                         <p className="storage">{member.storage}</p>

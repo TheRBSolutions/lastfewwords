@@ -31,7 +31,7 @@ const Dashboard = () => {
     return (
         <div className="dashboard-container">
             <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-            <header className="dashboard-header">
+            <header className="dashboard-header" style={{ cursor: 'pointer' }}>
                 <FontAwesomeIcon icon={faBars} className="menu-icon" onClick={toggleSidebar} />
                 <FontAwesomeIcon icon={faUserCircle} className="user-icon" />
             </header>
@@ -46,31 +46,39 @@ const Dashboard = () => {
                 <p>155.6 of 200 GB Used</p>
             </div>
             <div className="features-grid">
-                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/audio-files') }}>
+                <div className="feature-item" style={{ cursor: 'pointer' }}
+                    onClick={() => { handleFiles('/lastfewwords/audio-files') }}>
                     <FontAwesomeIcon icon={faVolumeUp} className="feature-icon" />
                     <p>Audio</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/video-files') }}>
+                <div className="feature-item" style={{ cursor: 'pointer' }}
+                    onClick={() => { handleFiles('/lastfewwords/video-files') }}>
                     <FontAwesomeIcon icon={faVideo} className="feature-icon" />
                     <p>Video</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/document-files') }}>
+                <div className="feature-item" style={{ cursor: 'pointer' }}
+                    onClick={() => { handleFiles('/lastfewwords/document-files') }}>
                     <FontAwesomeIcon icon={faFileAlt} className="feature-icon" />
                     <p>Document</p>
                 </div>
-                <div className="feature-item" onClick={() => { handleFiles('/lastfewwords/image-files') }}>
+                <div className="feature-item" style={{ cursor: 'pointer' }}
+                    onClick={() => { handleFiles('/lastfewwords/image-files') }}>
                     <FontAwesomeIcon icon={faImage} className="feature-icon" />
                     <p>Images</p>
                 </div>
-                <div className="feature-item-wide" onClick={() => { handleFiles('/lastfewwords/family-legacy') }}>
+                <div className="feature-item-wide" style={{ cursor: 'pointer' }}
+                    onClick={() => { handleFiles('/lastfewwords/family-legacy') }}>
                     <FontAwesomeIcon icon={faUsers} className="feature-icon" />
                     <p>Family Legacy</p>
                 </div>
             </div>
             <footer className="dashboard-footer">
-                <FontAwesomeIcon icon={faCloudArrowUp} className="footer-icon" />
-                <FontAwesomeIcon icon={faShoppingCart} className="footer-icon" />
-                <FontAwesomeIcon icon={faLock} className="footer-icon" />
+                <FontAwesomeIcon icon={faCloudArrowUp} className="footer-icon"
+                    style={{ cursor: 'pointer' }} />
+                <FontAwesomeIcon icon={faShoppingCart} className="footer-icon"
+                    style={{ cursor: 'pointer' }} />
+                <FontAwesomeIcon icon={faLock} className="footer-icon"
+                    style={{ cursor: 'pointer' }} />
             </footer>
         </div>
     );
